@@ -25,49 +25,28 @@ async function register(req, res) {
     res.status(200).json(newUser);
   } catch (error) {
     console.log(error);
+    res.status(500).json(error)
   }
 }
 async function login(req, res) {
-  console.log("Login ho  fooo chl  rahahen ");
-
   try {
-    const user = await User.findOne({ email: req.body.email });
-    if (!user) {
-      res.status(404).json("User not found");
-    }
-    const validPassword = await bcrypt.compare(
-      req.body.password,
-      user.password
-    );
-    console.log(validPassword);
-    if (!validPassword) {
-      res.status(400).json("Wrong Password");
-    }
-    console.log(user);
-    res.status(200).json(user);
+    console.log("Login ho  fooo chl  rahahen ");
+    let user = await User.findOne({ email: req.body.email });
+    !user && res.status(404).json("User email not found");
+    // res.status(200).send(user);
+    const validPassword = await bcrypt.compare(req.body.password, user.password);
+    if(!validPassword){
+      // console.log("password wrong")
+      res.status(400).json("password wrong")
+    }else{
+      console.log("Correct Password SALAM come User");
+      res.status(200).json(user);
+    };
   } catch (error) {
-    res.status(500).json(error);
+    res.status(500).json(error)
   }
 
-  // try {
-  //   let user = await User.findOne({ email: req.body.email });
-  //   !user && res.status(404).json("User email not found");
-  //   const validPassword = await bcrypt.compare(req.body.password, user.password)
-  //   if(!validPassword){
-  //             res.status(400).json("Wrong Password")
-  //         }
-  //     console.log(validPassword);
-  //     if(!validPassword){
-  //         res.status(400).json("Wrong Password")
-  //     }
-  // res.status(404).json("user correct wellcome ")
-  // let validpassword = await bcrypt.compare(req.body.password, user.password);
-  // !validpassword && res.status(400).json("password incorrect");
-
-  //   res.status(200).json(user);
-  // } catch (error) {
-  //   console.log(error);
-  // }
+  // console.log(validPassword === req.body.password);
 }
 
 export { register, home, login };
