@@ -1,9 +1,10 @@
-import  express  from "express";
-import {home} from "../controller/controller.js"
-let router = express.Router()
+import express from "express";
+import { register } from "../controller/controller.js";
+// import { User } from "../model/model.js";
+
+let router = express.Router();
 // console.log(app);
-router.get('/',home)
+// router.get("/", home);
+router.get("/register", register);
 
-
-
-export  {router}
+export { router };
