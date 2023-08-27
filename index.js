@@ -1,36 +1,35 @@
 console.log("SALAM");
-import Express, { Router } from "express";
+import express, { Router } from "express";
 import { MongoClient } from "mongodb";
 import { router } from "./routes/routes.js";
 import morgan from "morgan";
 import helmet from "helmet";
 import { User } from "./model/model.js";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import bcrypt from "bcrypt"
+// import {home} from "./controller/controller.js"
 
-let app = Express();
-app.use(Express.json());
+dotenv.config();
+const app = express();
+const port = 8080;
+app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
-
-let uri = `mongodb+srv://mutahirkareem820:zYgah8t4j4Y7fPnx@cluster0.d6rq4l1.mongodb.net/`;
-const mongodb_client = new MongoClient(uri);
-async function start() {
-  try {
-    await mongodb_client.connect();
-    console.log("Successfully connected to Atlas");
-  } catch (error) {
-    console.log(error);
-  } finally {
-    await mongodb_client.close();
-  }
-}
-start().catch(console.dir);
-
-let port = 8000;
-app.use((req, res, next) => {
-  next();
-});
-app.use("/auth", router);
-
-app.listen(port, () => {
-  console.log("server start");
-});
+mongoose
+  .connect(process.env.MONGO_URL)
+  // it is code when db is connected
+  .then(() => {
+    // middle ware
+    console.log("Successfully connected to DB");
+    app.listen(port, () => {
+      app.use("/auth", router);
+      console.log(`Port is running on port number ${port}`);
+    });
+  })
+  
+  // it is code when db has error in connection
+  .catch((error) => {
+    console.error("Error connecting to DB:", error);
+  });
+  
