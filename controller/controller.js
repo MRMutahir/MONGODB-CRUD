@@ -20,7 +20,7 @@ async function register(req, res) {
       password: hashpassword, // Make sure password is a string
     });
     //  save new users
-    let user = await newUser.save();
+    await newUser.save();
     // console.log(user);
     res.status(200).json(newUser);
   } catch (error) {
