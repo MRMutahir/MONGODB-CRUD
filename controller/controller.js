@@ -25,7 +25,9 @@ async function register(req, res) {
     res.status(200).json(newUser);
   } catch (error) {
     console.log(error);
-    res.status(500).json(error)
+    res
+      .status(500)
+      .json(`${error}  write a specific data . This data is already Use`);
   }
 }
 async function login(req, res) {
@@ -34,16 +36,19 @@ async function login(req, res) {
     let user = await User.findOne({ email: req.body.email });
     !user && res.status(404).json("User email not found");
     // res.status(200).send(user);
-    const validPassword = await bcrypt.compare(req.body.password, user.password);
-    if(!validPassword){
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+    if (!validPassword) {
       // console.log("password wrong")
-      res.status(400).json("password wrong")
-    }else{
+      res.status(400).json("password wrong");
+    } else {
       console.log("Correct Password SALAM come User");
       res.status(200).json(user);
-    };
+    }
   } catch (error) {
-    res.status(500).json(error)
+    res.status(500).json(error);
   }
 
   // console.log(validPassword === req.body.password);
