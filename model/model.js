@@ -33,7 +33,6 @@ const userSchema = new mongoose.Schema(
       default: [],
     },
     followings: {
-      // Corrected field name
       type: Array,
       default: [],
     },
@@ -63,4 +62,4 @@ const userSchema = new mongoose.Schema(
 
 const User = mongoose.model("User", userSchema);
 
-export {User};
+export { User };
