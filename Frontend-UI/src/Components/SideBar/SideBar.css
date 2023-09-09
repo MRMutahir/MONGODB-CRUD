@@ -1,8 +1,3 @@
-.SideBar {
-  flex: 3;
-  height: calc(100vh -50px);
-}
-
 .sidebarWrapper {
   padding: 20px;
 }
@@ -32,16 +27,23 @@
 .sidebarHr {
   margin: 20px 0;
 }
-.sidebarFriendList {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 15px;
-  list-style: none;
-}
 
 .FriendList-li img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.SideBar {
+  flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+.sidebarFriendList {
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  list-style: none;
 }

@@ -58,6 +58,126 @@ function SideBar() {
           <li className="FriendList-li">
             <img src="\assets\person2.jpg" alt="" />
             <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
+          </li>{" "}
+          <li className="FriendList-li">
+            <img src="\assets\person2.jpg" alt="" />
+            <span>Muhammad Mutahir</span>
           </li>
         </ul>
       </div>
