@@ -59,6 +59,9 @@
   padding: 10px;
   background-color: green;
   font-weight: 500;
+  cursor: pointer;
+  margin-right: 20px;
+  color: white;
 }
 
 .shareButtom {
