@@ -5,6 +5,7 @@
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
+
 .shareWrapper {
   padding: 20px;
 }
@@ -26,6 +27,42 @@
 .shareInput:focus {
   outline: none;
 }
-.share-line{
-    margin: 20px;
+.share-line {
+  margin: 20px;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.share-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: green;
+  font-weight: 500;
+}
+
+.shareButtom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
