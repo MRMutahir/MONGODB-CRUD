@@ -1,3 +1,76 @@
 .RightBar {
   flex: 3.5;
 }
+
+.Right-Wrapper {
+  padding: 20px 20px 0 0;
+}
+
+.Birthday-Container {
+  display: flex;
+  align-items: center;
+}
+
+.Birthday-Container img {
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.bir-text {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.r-b-add {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.r--b-ul-fri-Lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fri-li {
+
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.r-b-profile-img-container {
+  display: flex;
+  margin: 15px;
+  position: relative;
+
+}
+
+.r-b-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.o-l-fri-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.r-b-UserName {
+  margin: 10px;
+}
+
+.r-b-Online {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: green;
+  border-radius: 50%;
+  left: 30px;
+  top: -1;
+  border: 2px solid white;
+}
