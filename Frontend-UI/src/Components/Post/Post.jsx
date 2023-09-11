@@ -3,11 +3,13 @@ import "./Post.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-function Post() {
+function Post({ postItem }) {
+  console.log(postItem);
+
   return (
     <div className="Post">
       <div className="PostWrapper">
-        <div className="Post-top">
+        <div className="Post-top">ٖ
           <div className="p-t-left">
             <div className="p-img">
               <img
@@ -25,7 +27,7 @@ function Post() {
           <span className="p-c-text">
             SALAM ! its my First post
           </span>
-          <img className="post-image"  src="\assets\center-image.jpg" alt="" />
+          <img className="post-image" src="\assets\center-image.jpg" alt="" />
         </div>
         <div className="Post-Buttom">
           <div className="p-b-left">
