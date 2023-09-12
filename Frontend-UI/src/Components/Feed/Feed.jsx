@@ -9,7 +9,10 @@ function Feed() {
     <div className="Feed">
       <div className="Wrapper">
         <Share />
-        {Users.map((ele) => { return <Post key={ele.id} postItem={ele} /> })}
+        {Users.map((ele) => {
+          return <Post key={ele.id} Posts={ele} />
+        })}
+        {/* {Users.map((ele) => { return key={ele.id} postItem={ele} /> })} */}
 
       </div>
     </div>

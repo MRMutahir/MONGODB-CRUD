@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Post.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-function Post({ postItem }) {
-  console.log(postItem);
-
+function Post(props) {
+  // console.log(props.Posts);
+  // let { profilePicture, username } = props.Posts
+  const [like, addlike] = useState(20)
+  function shoot(params) {
+    addlike(like + 1)
+    console.log("SALAM shoot");
+  }
   return (
     <div className="Post">
       <div className="PostWrapper">
@@ -31,11 +36,12 @@ function Post({ postItem }) {
         </div>
         <div className="Post-Buttom">
           <div className="p-b-left">
-            <FavoriteIcon htmlColor="red" />
+            <FavoriteIcon htmlColor="red" onClick={shoot} />
             <ThumbUpIcon htmlColor="lightblue" />
+
             {/* <img src="" alt="" /> */}
             <img src="" alt="" />
-            <span className="likeCount">20 people Like</span>
+            <span className="likeCount">{like} people Like</span>
           </div>
           <div className="p-b-right">
             <div className="p-comments-text">20 comments</div>
