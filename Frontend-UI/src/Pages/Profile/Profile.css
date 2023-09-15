@@ -1,0 +1,14 @@
+.profile {
+  display: flex;
+}
+.profileRight {
+  flex: 9;
+}
+
+.p-r-buttom {
+  display: flex;
+}
+.p-r-t-cover{
+    position: relative;
+    height: 320px;
+}
