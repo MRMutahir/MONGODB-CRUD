@@ -13,17 +13,17 @@ function Profile() {
                 <div className="profileRight">
                     <div className="p-r-top">
                         <div className="p-r-t-cover">
-                            <img src="\assets\profileimagemain.jpeg" alt="" />
-                            <img src="\assets\bgfacebook.jpeg" alt="" />
+                            <img  className='pro-cover-image'   src="\assets\bgfacebook.jpeg" alt="" />
+                            <img   className='pro-main-image' src="\assets\profileimagemain.jpeg" alt="" />
                         </div>
                         <div className="profile-info">
-                            <h4>Rock</h4>
-                            <span>Hello World </span>
+                            <h4 className='p-name'>Rock</h4>
+                            <span  className='p-para'>Hello World </span>
                         </div>
                     </div>
                     <div className="p-r-buttom">
                         <Feed />
-                        <RightBar />
+                        <RightBar  Profile  />
                     </div>
 
                 </div>

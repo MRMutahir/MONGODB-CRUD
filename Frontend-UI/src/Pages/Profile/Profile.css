@@ -8,7 +8,37 @@
 .p-r-buttom {
   display: flex;
 }
-.p-r-t-cover{
-    position: relative;
-    height: 320px;
+.p-r-t-cover {
+  position: relative;
+  height: 320px;
+}
+
+.pro-cover-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.pro-main-image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;right:0;
+  margin: auto;
+  top: 9rem;
+  border:3px solid white;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p-name{
+  font-size: 24px;
+  font-weight: 700;
+}
+.p-para{
+  font-weight: 300;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./RightBar.css";
 
-function RightBar() {
+function RightBar({ profile }) {
   return (<div className="RightBar">
     <div className="Right-Wrapper">
       <div className="Birthday-Container">
