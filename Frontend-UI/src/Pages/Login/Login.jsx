@@ -6,7 +6,7 @@ function Login() {
             <div className="loginWrapper">
                 <div className="left-side">
                     <div className="logo-name">Muhammad Mutahir</div>
-                    <div className="logo-dec"> connect IT  with SMIT</div>
+                    <div className="logo-dec"> Connect IT  with SMIT</div>
                 </div>
                 <div className="right-side">
                     <div className="loginBox">
