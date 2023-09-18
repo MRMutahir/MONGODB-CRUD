@@ -105,7 +105,7 @@ export const Posts = [
   {
     id: 1,
     desc: "Love For All, Hatred For None.",
-    photo: "Frontend-UIpublicassetspostp1.jpg",
+    photo: "postimg/p1.jpg",
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -113,7 +113,7 @@ export const Posts = [
   },
   {
     id: 2,
-    photo: "Frontend-UIpublicassetspostp2.jpg",
+    photo: "postimg/p1.jpg",
     date: "15 mins ago",
     userId: 2,
     like: 2,
@@ -122,7 +122,7 @@ export const Posts = [
   {
     id: 3,
     desc: "Every moment is a fresh beginning.",
-    photo: "Frontend-UIpublicassetspostp3.jpg",
+    photo: "postimg/p1.jpg",
     date: "1 hour ago",
     userId: 3,
     like: 61,
@@ -130,7 +130,7 @@ export const Posts = [
   },
   {
     id: 4,
-    photo: "Frontend-UIpublicassetspostp4.jpg",
+    photo: "postimg/p1.jpg",
     date: "4 hours ago",
     userId: 4,
     like: 7,
@@ -138,7 +138,7 @@ export const Posts = [
   },
   {
     id: 5,
-    photo: "Frontend-UIpublicassetspostp5.jpg",
+    photo: "postimg/p1.jpg",
     date: "5 hours ago",
     userId: 5,
     like: 23,
@@ -146,7 +146,7 @@ export const Posts = [
   },
   {
     id: 6,
-    photo: "Frontend-UIpublicassetspostp6.jpg",
+    photo: "postimg/p1.jpg",
     date: "1 day ago",
     userId: 6,
     like: 44,
@@ -155,7 +155,7 @@ export const Posts = [
   {
     id: 7,
     desc: "Never regret anything that made you smile.",
-    photo: "Frontend-UIpublicassetspostp7.webp",
+    photo: "postimg/p1.jpg",
     date: "2 days ago",
     userId: 7,
     like: 52,
@@ -163,7 +163,7 @@ export const Posts = [
   },
   {
     id: 8,
-    photo: "Frontend-UIpublicassetspostp8.jpg",
+    photo: "postimg/p1.jpg",
     date: "3 days ago",
     userId: 8,
     like: 15,
@@ -171,8 +171,8 @@ export const Posts = [
   },
   {
     id: 9,
-    desc: "Frontend-UIpublicassetspostp9.jpg",
-    photo: "assets/post/9.jpeg",
+    desc: "hi dear",
+    photo: "postimg/p1.jpg",
     date: "5 days ago",
     userId: 9,
     like: 11,
@@ -180,7 +180,7 @@ export const Posts = [
   },
   {
     id: 10,
-    photo: "Frontend-UIpublicassetspostp10.jpg",
+    photo: "postimg/p1.jpg",
     date: "1 week ago",
     userId: 10,
     like: 104,

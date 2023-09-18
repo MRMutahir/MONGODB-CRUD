@@ -6,13 +6,12 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 function Post({ Posts }) {
   // console.log(props.Posts);
-  // console.log(props);
+  console.log(Posts);
   const [like, addlike] = useState(20)
   const PF = process.env.REACT_APP_PUBLIC_FOLDER
   function shoot() {
     addlike(like + 1)
     console.log("SALAM shoot");
-
   }
   return (
     <div className="Post">
@@ -28,15 +27,17 @@ function Post({ Posts }) {
               />
             </div>
             <div className="p-name">{Posts.first_name}</div>
-            <div className="p-date">{new Date().toLocaleDateString()}</div>
+            <div className="p-date">
+              {Post?.date}</div>
           </div>
           <MoreVertIcon />
         </div>
         <div className="Post-Center">
           <span className="p-c-text">
-            SALAM ! its my First post
+            {Post?.desc}
           </span>
-          <img className="post-image" src="\assets\center-image.jpg" alt="" />
+          <img className="post-image"
+            src={Post?.photo}alt="" />
         </div>
         <div className="Post-Buttom">
           <div className="p-b-left">
@@ -44,10 +45,10 @@ function Post({ Posts }) {
             <ThumbUpIcon htmlColor="lightblue" />
             {/* <img src="" alt="" /> */}
             <img src="" alt="" />
-            <span className="likeCount">{like} people Like</span>
+            <span className="likeCount">{Post?.like} people Like</span>
           </div>
           <div className="p-b-right">
-            <div className="p-comments-text">20 comments</div>
+            <div className="p-comments-text">{Post?.comment} comments</div>
           </div>
         </div>
       </div>
