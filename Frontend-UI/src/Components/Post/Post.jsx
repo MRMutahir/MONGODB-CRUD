@@ -4,10 +4,11 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
-function Post(props) {
-  console.log(props.Posts);
-  console.log(props);
+function Post({ Posts }) {
+  // console.log(props.Posts);
+  // console.log(props);
   const [like, addlike] = useState(20)
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
   function shoot() {
     addlike(like + 1)
     console.log("SALAM shoot");
@@ -22,11 +23,11 @@ function Post(props) {
             <div className="p-img">
               <img
                 className="post-profile-img"
-                src={props.Posts.ip_address}
+                src={Posts.ip_address}
                 alt=""
               />
             </div>
-            <div className="p-name">{props.Posts.first_name}</div>
+            <div className="p-name">{Posts.first_name}</div>
             <div className="p-date">{new Date().toLocaleDateString()}</div>
           </div>
           <MoreVertIcon />
