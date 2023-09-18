@@ -28,16 +28,16 @@ function Post({ Posts }) {
             </div>
             <div className="p-name">{Posts.first_name}</div>
             <div className="p-date">
-              {Post?.date}</div>
+              {Posts?.date}</div>
           </div>
           <MoreVertIcon />
         </div>
         <div className="Post-Center">
           <span className="p-c-text">
-            {Post?.desc}
+            {Posts?.desc}
           </span>
           <img className="post-image"
-            src={Post?.photo}alt="" />
+            src={` ${Posts?.desc}`}alt="" />
         </div>
         <div className="Post-Buttom">
           <div className="p-b-left">
