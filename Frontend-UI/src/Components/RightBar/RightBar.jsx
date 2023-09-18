@@ -1,6 +1,7 @@
 import React from "react";
 import "./RightBar.css";
-
+import { Users } from "../../DummyData.js"
+import Online from "../OnlineFri/Online";
 function RightBar({ profile }) {
   return (<div className="RightBar">
     <div className="Right-Wrapper">
@@ -13,81 +14,11 @@ function RightBar({ profile }) {
       <img className="r-b-add" src="\assets\add1.jpg" alt="" />
       <h1 className="o-l-fri-title">Online Friends</h1>
       <ul className="r--b-ul-fri-Lists">
-        <li className="fri-li">
-          <div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div>
-          <div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div>
-          <div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div><div className="r-b-profile-img-container">
-            <img className="r-b-profile-img"
-              src="\assets\person3.jpg" alt="" />
-            <span className="r-b-Online"></span>
-            <span className="r-b-UserName">Hammad Bhai</span>
-          </div>
-        </li>
+
+        {Users.map((u) => (
+          <Online users={Users} />
+        ))}
+
       </ul>
     </div>
   </div>);
