@@ -2,97 +2,97 @@ export const Users = [
   {
     id: 1,
     first_name: "Carlita",
-    ip_address: "http://dummyimage.com/235x100.png/ff4444/ffffff",
+    picture: "./assets2/1.jpg",
   },
   {
     id: 2,
     first_name: "Harriot",
-    ip_address: "http://dummyimage.com/193x100.png/ff4444/ffffff",
+    picture: "./assets2/2.jpg",
   },
   {
     id: 3,
     first_name: "Jacquenette",
-    ip_address: "http://dummyimage.com/159x100.png/ff4444/ffffff",
+    picture: "./assets2/3.jpg",
   },
   {
     id: 4,
     first_name: "Sheppard",
-    ip_address: "http://dummyimage.com/226x100.png/dddddd/000000",
+    picture: "./assets2/4.jpg",
   },
   {
     id: 5,
     first_name: "Gwennie",
-    ip_address: "http://dummyimage.com/247x100.png/5fa2dd/ffffff",
+    picture: "./assets2/5.jpg",
   },
   {
     id: 6,
     first_name: "Alikee",
-    ip_address: "http://dummyimage.com/174x100.png/cc0000/ffffff",
+    picture: "./assets2/1",
   },
   {
     id: 7,
     first_name: "Sharon",
-    ip_address: "http://dummyimage.com/151x100.png/5fa2dd/ffffff",
+    picture: "./assets2/1",
   },
   {
     id: 8,
     first_name: "Jaymee",
-    ip_address: "http://dummyimage.com/181x100.png/dddddd/000000",
+    picture: "./assets2/1",
   },
   {
     id: 9,
     first_name: "Florenza",
-    ip_address: "http://dummyimage.com/200x100.png/dddddd/000000",
+    picture: "./assets2/1",
   },
   {
     id: 10,
     first_name: "Jody",
-    ip_address: "http://dummyimage.com/101x100.png/cc0000/ffffff",
+    picture: "./assets2/1",
   },
   {
     id: 11,
     first_name: "Craggy",
-    ip_address: "http://dummyimage.com/146x100.png/dddddd/000000",
+    picture: "./assets2/1",
   },
   {
     id: 12,
     first_name: "Magdaia",
-    ip_address: "http://dummyimage.com/115x100.png/dddddd/000000",
+    picture: "./assets2/1",
   },
   {
     id: 13,
     first_name: "Shaughn",
-    ip_address: "http://dummyimage.com/140x100.png/ff4444/ffffff",
+    picture: "./assets2/1",
   },
   {
     id: 14,
     first_name: "Hilary",
-    ip_address: "http://dummyimage.com/130x100.png/5fa2dd/ffffff",
+    picture: "./assets2/1.jpg",
   },
   {
     id: 15,
     first_name: "Rickert",
-    ip_address: "http://dummyimage.com/205x100.png/dddddd/000000",
+    picture: "./assets2/2.jpg",
   },
   {
     id: 16,
     first_name: "Orsa",
-    ip_address: "http://dummyimage.com/244x100.png/ff4444/ffffff",
+    picture: "./assets2/3.jpg",
   },
   {
     id: 17,
     first_name: "Nessie",
-    ip_address: "http://dummyimage.com/208x100.png/cc0000/ffffff",
+    picture: "./assets2/4.jpg",
   },
   {
     id: 18,
     first_name: "Adelbert",
-    ip_address: "http://dummyimage.com/212x100.png/dddddd/000000",
+    picture: "./assets2/5.jpg",
   },
   {
     id: 19,
     first_name: "Roley",
-    ip_address: "http://dummyimage.com/120x100.png/5fa2dd/ffffff",
+    picture: "./assets2/ahsan.jpg",
   },
   {
     id: 20,
@@ -105,7 +105,7 @@ export const Posts = [
   {
     id: 1,
     desc: "Love For All, Hatred For None.",
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p1.jpg",
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -113,7 +113,7 @@ export const Posts = [
   },
   {
     id: 2,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p2.jpg",
     date: "15 mins ago",
     userId: 2,
     like: 2,
@@ -122,7 +122,7 @@ export const Posts = [
   {
     id: 3,
     desc: "Every moment is a fresh beginning.",
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p3.jpg",
     date: "1 hour ago",
     userId: 3,
     like: 61,
@@ -130,7 +130,7 @@ export const Posts = [
   },
   {
     id: 4,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p4.jpg",
     date: "4 hours ago",
     userId: 4,
     like: 7,
@@ -138,7 +138,7 @@ export const Posts = [
   },
   {
     id: 5,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p5.jpg",
     date: "5 hours ago",
     userId: 5,
     like: 23,
@@ -146,7 +146,7 @@ export const Posts = [
   },
   {
     id: 6,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p6.jpg",
     date: "1 day ago",
     userId: 6,
     like: 44,
@@ -155,7 +155,7 @@ export const Posts = [
   {
     id: 7,
     desc: "Never regret anything that made you smile.",
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p7.jpg",
     date: "2 days ago",
     userId: 7,
     like: 52,
@@ -163,7 +163,7 @@ export const Posts = [
   },
   {
     id: 8,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p8.jpg",
     date: "3 days ago",
     userId: 8,
     like: 15,
@@ -172,7 +172,7 @@ export const Posts = [
   {
     id: 9,
     desc: "hi dear",
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p9.jpg",
     date: "5 days ago",
     userId: 9,
     like: 11,
@@ -180,7 +180,7 @@ export const Posts = [
   },
   {
     id: 10,
-    photo: "postimg/p1.jpg",
+    photo: "assets/postimg/p10.jpg",
     date: "1 week ago",
     userId: 10,
     like: 104,
