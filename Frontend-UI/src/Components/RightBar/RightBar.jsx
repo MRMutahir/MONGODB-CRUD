@@ -3,8 +3,9 @@ import "./RightBar.css";
 import { Users } from "../../DummyData.js"
 import Online from "../OnlineFri/Online";
 function RightBar({ profile }) {
-  return (<div className="RightBar">
-    <div className="Right-Wrapper">
+
+  const HomeRightBar = () => {
+    return (<>
       <div className="Birthday-Container">
         <img src="\assets\birthdayGift.png" alt="" />
         <div className="bir-text">
@@ -20,6 +21,18 @@ function RightBar({ profile }) {
         ))}
 
       </ul>
+    </>)
+  }
+  const ProfileRightBar = () => {
+    return (
+      <>
+        <HomeRightBar />
+      </>
+    )
+  }
+  return (<div className="RightBar">
+    <div className="Right-Wrapper">
+      <ProfileRightBar />
     </div>
   </div>);
 }

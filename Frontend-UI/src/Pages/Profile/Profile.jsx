@@ -23,7 +23,7 @@ function Profile() {
                     </div>
                     <div className="p-r-buttom">
                         <Feed />
-                        <RightBar  Profile  />
+                        <RightBar profile />
                     </div>
 
                 </div>
