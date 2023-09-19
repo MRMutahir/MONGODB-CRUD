@@ -16,7 +16,7 @@ function RightBar({ profile }) {
       <ul className="r--b-ul-fri-Lists">
 
         {Users.map((u) => (
-          <Online users={Users} />
+          <Online users={u} />
         ))}
 
       </ul>

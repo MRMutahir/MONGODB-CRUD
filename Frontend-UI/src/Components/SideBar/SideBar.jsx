@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideBar.css";
-import PersonIcon from "@mui/icons-material/Person";
+// import PersonIcon from "@mui/icons-material/Person";
 import RssFeed from "@mui/icons-material/RssFeed";
 import ChatIcon from "@mui/icons-material/Chat";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
@@ -10,6 +10,8 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import EventIcon from "@mui/icons-material/Event";
 import SchoolIcon from "@mui/icons-material/School";
+import { Users } from "../../DummyData.js";
+import Close from "../Closefri/Close";
 function SideBar() {
   return (
     <div className="SideBar">
@@ -55,130 +57,12 @@ function SideBar() {
         <button className="s-b-btn">Show more</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />  
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>{" "}
-          <li className="FriendList-li">
-            <img src="\assets\person2.jpg" alt="" />
-            <span>Muhammad Mutahir</span>
-          </li>
+          {Users.map((closele) => (
+            <Close userClose={closele} />
+
+          ))}
+
+
         </ul>
       </div>
     </div>
